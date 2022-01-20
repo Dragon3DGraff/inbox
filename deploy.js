@@ -2,7 +2,7 @@ const HDWalletProvider = require('@truffle/hdwallet-provider')
 const Web3 = require('web3');
 const { abi, evm } = require('./compile')
 
-import { credentials } from './credentials.js'
+const credentials = require('./credentials.js')
 
 const provider = new HDWalletProvider(
   credentials.SECRET_PHRASE,
